@@ -4,34 +4,32 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* REIA Color Palette */
-  --background: #0D2137;
-  --background-secondary: #132B47;
-  --foreground: #F5F0E8;
-  --card: #163352;
-  --card-foreground: #F5F0E8;
-  --popover: #163352;
-  --popover-foreground: #F5F0E8;
-  --background-light: #F8F9FA;
-  --foreground-light: #0D2137;
+  /* REIA Light Theme Color Palette */
+  --background: #F0F4F8;
+  --background-secondary: #EBF2FA;
+  --foreground: #0D2137;
+  --card: #FFFFFF;
+  --card-foreground: #0D2137;
+  --popover: #FFFFFF;
+  --popover-foreground: #0D2137;
   --primary: #C9A84C;
   --primary-foreground: #0A1628;
-  --secondary: #1F3550;
-  --secondary-foreground: #F5F0E8;
-  --muted: #1F3550;
-  --muted-foreground: #8899AA;
+  --secondary: #0D2137;
+  --secondary-foreground: #FFFFFF;
+  --muted: #EBF2FA;
+  --muted-foreground: #4A6580;
   --accent: #E8C97A;
   --accent-foreground: #0A1628;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: #1F3550;
-  --input: #1F3550;
+  --border: #D0DEE9;
+  --input: #D0DEE9;
   --ring: #C9A84C;
   --chart-1: #C9A84C;
   --chart-2: #E8C97A;
-  --chart-3: #8899AA;
-  --chart-4: #1F3550;
-  --chart-5: #12203A;
+  --chart-3: #4A6580;
+  --chart-4: #D0DEE9;
+  --chart-5: #EBF2FA;
   --radius: 0.625rem;
   --gold: #C9A84C;
   --gold-light: #E8C97A;
@@ -43,8 +41,6 @@
   --font-mono: 'Bebas Neue', monospace;
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
-  --color-background-light: var(--background-light);
-  --color-foreground-light: var(--foreground-light);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -88,49 +84,63 @@
   }
 }
 
-/* Grid texture background */
+/* Grid texture background - light version */
 .grid-texture {
-  background-image: 
-    linear-gradient(rgba(31, 53, 80, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31, 53, 80, 0.1) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(208, 222, 233, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(208, 222, 233, 0.4) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-/* Glass morphism */
-/* Light section styles */
-.section-light {
-  background-color: var(--background-light);
-  color: var(--foreground-light);
-}
-
-.section-light .text-foreground {
-  color: var(--foreground-light);
-}
-
-.section-light .text-muted-foreground {
-  color: #4A6180;
-}
-
-.section-light .glass-card {
-  background: rgba(255, 255, 255, 0.8);
-  border-color: rgba(13, 33, 55, 0.1);
-}
-
-.section-light .gold-gradient-line {
-  background: linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent);
-}
-
+/* Glass morphism - light version */
 .glass {
-  background: rgba(22, 51, 82, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
 .glass-card {
+  background: #FFFFFF;
+  border: 1px solid #D0DEE9;
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 30px rgba(13, 33, 55, 0.1);
+}
+
+/* Dark section (stats, footer) */
+.section-dark {
+  background-color: #0D2137;
+  color: #F5F0E8;
+}
+
+.section-dark .text-foreground {
+  color: #F5F0E8;
+}
+
+.section-dark .text-muted-foreground {
+  color: #8899AA;
+}
+
+.section-dark .glass-card {
+  background: rgba(22, 51, 82, 0.5);
+  border-color: rgba(31, 53, 80, 0.5);
+}
+
+/* Hero section (dark with image) */
+.section-hero .glass-card {
   background: rgba(22, 51, 82, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(31, 53, 80, 0.5);
+  border-color: rgba(31, 53, 80, 0.5);
+}
+
+.section-hero .text-foreground {
+  color: #F5F0E8;
+}
+
+.section-hero .text-muted-foreground {
+  color: #8899AA;
 }
 
 /* Gold gradient line */

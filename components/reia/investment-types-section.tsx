@@ -45,7 +45,7 @@ const investmentTypes = [
 
 export function InvestmentTypesSection() {
   return (
-    <section id="investment-types" className="py-24 section-light">
+    <section id="investment-types" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

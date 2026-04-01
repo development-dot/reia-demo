@@ -68,7 +68,7 @@ export function CTASection() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-background grid-texture">
+    <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

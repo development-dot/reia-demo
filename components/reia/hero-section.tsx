@@ -5,14 +5,14 @@ import { ArrowRight, ChevronDown, TrendingUp, PieChart, Shield } from "lucide-re
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ fontFamily: "'Meiryo', 'メイリオ', 'MS PGothic', sans-serif" }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden section-hero" style={{ fontFamily: "'Meiryo', 'メイリオ', 'MS PGothic', sans-serif" }}>
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')" }}
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0" style={{ backgroundColor: "rgba(10, 22, 40, 0.65)" }} />
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(10, 22, 40, 0.55)" }} />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       
       {/* Content */}
@@ -32,7 +32,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="space-y-4"
             >
-              <h2 className="text-[48px] lg:text-[80px] font-bold leading-none" style={{ letterSpacing: "0.15em" }}>
+              <h2 className="text-[36px] sm:text-[48px] lg:text-[60px] font-bold leading-none whitespace-nowrap" style={{ letterSpacing: "0.15em" }}>
                 <span style={{ color: "#C9A84C" }}>AI </span>
                 <span style={{ color: "#F5F0E8" }}>× </span>
                 <span style={{ color: "#C9A84C" }}>不動産投資</span>

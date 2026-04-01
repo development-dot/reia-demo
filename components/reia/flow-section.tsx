@@ -26,7 +26,7 @@ const steps = [
 
 export function FlowSection() {
   return (
-    <section className="py-24 section-light">
+    <section className="py-24 bg-background-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

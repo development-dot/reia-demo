@@ -140,7 +140,7 @@ export function DiagnosisSection() {
   }
 
   return (
-    <section id="diagnosis" className="py-24 bg-background grid-texture">
+    <section id="diagnosis" className="py-24 bg-background-secondary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
