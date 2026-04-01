@@ -148,7 +148,7 @@ export function Footer() {
             投資に関する最終的な決定は、ご自身の判断と責任において行ってください。
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2025 REIA All rights reserved.
+            © 2026 REIA All rights reserved.
           </p>
         </div>
       </div>

@@ -2,37 +2,44 @@
 
 import { motion } from "framer-motion"
 import { Building2, Home, Building, Coins, BarChart3, MapPin, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 const investmentTypes = [
   {
     icon: Home,
     title: "ワンルームマンション投資",
     description: "少額から始められる都市型投資",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
   },
   {
     icon: Building2,
     title: "区分所有マンション投資",
     description: "安定収益と節税効果を両立",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
   },
   {
     icon: Building,
     title: "一棟アパート・マンション",
     description: "高利回りを狙う本格投資",
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
   },
   {
     icon: Coins,
     title: "不動産クラウドファンディング",
     description: "1万円から始める新時代の投資",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
   },
   {
     icon: BarChart3,
     title: "J-REIT（不動産投資信託）",
     description: "証券口座で買える不動産投資",
+    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80",
   },
   {
     icon: MapPin,
     title: "相続・土地活用",
     description: "遊休地を収益化する選択肢",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
   },
 ]
 
@@ -70,7 +77,17 @@ export function InvestmentTypesSection() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="glass-card rounded-xl p-6 h-full hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+              <div className="glass-card rounded-xl overflow-hidden h-full hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <div className="relative h-[160px] overflow-hidden">
+                  <Image
+                    src={type.image}
+                    alt={type.title}
+                    fill
+                    className="object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <type.icon className="w-6 h-6 text-primary" />
                 </div>
@@ -84,6 +101,7 @@ export function InvestmentTypesSection() {
                   詳しく見る
                   <ArrowRight className="w-4 h-4" />
                 </span>
+                </div>
               </div>
             </motion.div>
           ))}
