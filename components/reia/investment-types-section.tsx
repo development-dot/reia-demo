@@ -9,7 +9,7 @@ const investmentTypes = [
     icon: Home,
     title: "ワンルームマンション投資",
     description: "少額から始められる都市型投資",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
   },
   {
     icon: Building2,
@@ -45,7 +45,7 @@ const investmentTypes = [
 
 export function InvestmentTypesSection() {
   return (
-    <section id="investment-types" className="py-24 bg-background-secondary">
+    <section id="investment-types" className="py-24 section-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

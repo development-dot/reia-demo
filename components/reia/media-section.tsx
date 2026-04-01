@@ -12,7 +12,7 @@ const articles = [
     category: "不動産投資",
     title: "2026年版｜ワンルームマンション投資のメリット・デメリットを徹底解説",
     date: "2026.01.15",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800&q=80",
   },
   {
     category: "節税",

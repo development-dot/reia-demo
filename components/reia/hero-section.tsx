@@ -5,9 +5,15 @@ import { ArrowRight, ChevronDown, TrendingUp, PieChart, Shield } from "lucide-re
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-texture">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80')" }}
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(10, 22, 40, 0.65)" }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
