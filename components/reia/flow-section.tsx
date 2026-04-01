@@ -68,7 +68,7 @@ export function FlowSection() {
             >
               <div className="glass-card rounded-xl p-8 text-center hover:-translate-y-1 transition-transform duration-300">
                 {/* Step number */}
-                <div className="font-[var(--font-bebas)] text-5xl text-primary/30 mb-4">
+                <div className="font-[var(--font-bebas)] text-5xl text-[#C9A84C] mb-4">
                   {step.number}
                 </div>
                 
@@ -78,10 +78,10 @@ export function FlowSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-medium text-foreground mb-2">
+                <h3 className="text-xl font-medium text-[#0A1628] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-[#4A6580]">
                   {step.description}
                 </p>
               </div>

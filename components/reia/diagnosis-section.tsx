@@ -172,7 +172,7 @@ export function DiagnosisSection() {
           {/* Progress Bar */}
           {currentStep < 4 && (
             <div className="mb-8">
-              <div className="flex justify-between text-sm text-muted-foreground mb-2">
+              <div className="flex justify-between text-sm text-[#4A6580] mb-2">
                 <span>STEP {currentStep} / {totalSteps - 1}</span>
                 <span>{Math.round(progress)}%</span>
               </div>
@@ -200,7 +200,7 @@ export function DiagnosisSection() {
                 custom={1}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-xl sm:text-2xl text-foreground mb-6">
+                <h3 className="text-xl sm:text-2xl text-[#0A1628] mb-6">
                   あなたの「投資目的」は？
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -238,7 +238,7 @@ export function DiagnosisSection() {
                 transition={{ duration: 0.3 }}
                 className="space-y-8"
               >
-                <h3 className="text-xl sm:text-2xl text-foreground mb-6">
+                <h3 className="text-xl sm:text-2xl text-[#0A1628] mb-6">
                   現在の「資産状況」を教えてください
                 </h3>
 
@@ -315,7 +315,7 @@ export function DiagnosisSection() {
                 custom={1}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-xl sm:text-2xl text-foreground mb-2">
+                <h3 className="text-xl sm:text-2xl text-[#0A1628] mb-2">
                   気になることを選んでください
                 </h3>
                 <p className="text-sm text-muted-foreground mb-6">複数選択可</p>
