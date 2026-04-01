@@ -78,10 +78,10 @@ export function CTASection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
+          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-[#0A1628] font-semibold mb-4">
             次のステップへ
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[#4A6580] max-w-2xl mx-auto">
             専門家への相談も、最新情報の取得も、すべて無料でご利用いただけます
           </p>
         </motion.div>
@@ -103,7 +103,7 @@ export function CTASection() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Calendar className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-[var(--font-cormorant)] text-2xl text-foreground">
+              <h3 className="font-[var(--font-cormorant)] text-2xl text-[#0A1628] font-semibold">
                 プロに、直接聞いてみる
               </h3>
             </div>
@@ -149,7 +149,7 @@ export function CTASection() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-[var(--font-cormorant)] text-2xl text-foreground">
+              <h3 className="font-[var(--font-cormorant)] text-2xl text-[#0A1628] font-semibold">
                 一般非公開の投資情報を受け取る
               </h3>
             </div>

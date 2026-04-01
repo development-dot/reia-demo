@@ -64,10 +64,10 @@ export function MediaSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
+          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-[#0A1628] font-semibold mb-4">
             不動産×お金の総合メディア
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[#4A6580] max-w-2xl mx-auto">
             投資の基礎知識から最新トレンドまで、資産運用に役立つ情報をお届けします
           </p>
         </motion.div>

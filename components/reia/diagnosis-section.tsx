@@ -150,10 +150,10 @@ export function DiagnosisSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
+          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-[#0A1628] font-semibold mb-4">
             2分で完了するAI資産運用診断
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[#4A6580] max-w-2xl mx-auto">
             あなたに合った不動産投資の形を、AIが提案します。個人情報の入力は不要です。
           </p>
         </motion.div>

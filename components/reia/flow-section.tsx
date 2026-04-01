@@ -36,10 +36,10 @@ export function FlowSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
+          <h2 className="font-[var(--font-cormorant)] text-3xl sm:text-4xl lg:text-5xl text-[#0A1628] font-semibold mb-4">
             3ステップではじめる
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-[#4A6580] max-w-2xl mx-auto">
             REIAは、AI診断から専門家への相談まで、一貫してサポートします
           </p>
         </motion.div>
