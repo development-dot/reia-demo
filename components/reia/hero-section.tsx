@@ -5,7 +5,7 @@ import { ArrowRight, ChevronDown, TrendingUp, PieChart, Shield } from "lucide-re
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ fontFamily: "'Meiryo', 'メイリオ', 'MS PGothic', sans-serif" }}>
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -25,19 +25,23 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-3 space-y-8"
           >
-            {/* Badge */}
+            {/* Hero Title */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-4"
             >
-              <span className="inline-block px-4 py-1.5 border border-primary/50 text-primary text-sm rounded-full tracking-wide">
-                AI × 不動産投資
-              </span>
+              <h2 className="text-[48px] lg:text-[80px] font-bold leading-none" style={{ letterSpacing: "0.15em" }}>
+                <span style={{ color: "#C9A84C" }}>AI </span>
+                <span style={{ color: "#F5F0E8" }}>× </span>
+                <span style={{ color: "#C9A84C" }}>不動産投資</span>
+              </h2>
+              <div className="w-[60px] h-[2px]" style={{ backgroundColor: "#C9A84C" }} />
             </motion.div>
 
             {/* Main Heading */}
-            <h1 className="font-[var(--font-cormorant)] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight text-foreground">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight text-foreground font-bold">
               <span className="block">あなたの資産に、</span>
               <span className="block gold-text">AIという判断力を。</span>
             </h1>
